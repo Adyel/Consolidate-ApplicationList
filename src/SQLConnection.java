@@ -64,33 +64,9 @@ public class SQLConnection {
     }
 
     public void insertData(String line) {
-        //line = line.replace("~", ", ");
 
         String[] qTest = line.split("~");
-        //System.out.println(qTest[0]);
-        //System.out.println(qTest[qTest.length - 1]);
-        /*
 
-        //replacing RB with RBD for proper formatting
-        line = line.replace("RB", "RBD");
-        StringBuilder str = new StringBuilder(line);
-
-        //padding uneven length numbers
-
-        if(str.length() < 37){
-            //System.out.println("Error  !" + str.length()  + " "+ str);
-            while (str.length() < 37) {
-                str.insert(28, '0');
-            }
-
-        }
-
-        //Adding " for String
-        str.insert(18, '"');
-        str.insert(22, '"');
-        str.insert(36, '"');
-        str.append('"');
-*/
         String query = "INSERT INTO Consolidated_ApplicationList ( Security_ID, AppNo, Type) VALUES ( " + qTest[2] + ", \"" + qTest[3] + "\"" + ", \"" + qTest[4] + "\"" + " )";
         //System.out.println(query);
 

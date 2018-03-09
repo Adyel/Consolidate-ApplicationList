@@ -8,10 +8,6 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
 
-        //File file = new File("SampleData.txt");
-        //File file = new File("ADVENT.txt");
-        Scanner cin = null;
-
         FileReader file = null;
         try {
 
@@ -23,19 +19,6 @@ public class Main {
         }
         BufferedReader br = new BufferedReader(file);
 
-
-/*
-        try {
-            cin = new Scanner(file);
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-
-
-
-        //sql.initialise();
-
-     */
         SQLConnection sql = new SQLConnection();
         sql.createDatabase();
 
@@ -44,14 +27,6 @@ public class Main {
             //System.out.println(line);
             sql.insertData(line);
         }
-
-        /*
-        while ( cin.hasNext() ){
-            sql.insertData( cin.next() );
-        }
-        */
-
-
     }
 
 
