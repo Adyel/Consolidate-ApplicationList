@@ -1,4 +1,7 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -39,7 +42,7 @@ public class Main {
         String line;
         while ((line = br.readLine()) != null) {
             //System.out.println(line);
-            sql.insertData( line );
+            sql.insertData(line);
         }
 
         /*

@@ -63,7 +63,7 @@ public class SQLConnection {
     public void initialise() {
     }
 
-    public void insertData(String line){
+    public void insertData(String line) {
         //line = line.replace("~", ", ");
 
         String[] qTest = line.split("~");
@@ -91,7 +91,7 @@ public class SQLConnection {
         str.insert(36, '"');
         str.append('"');
 */
-        String query = "INSERT INTO Consolidated_ApplicationList ( Security_ID, AppNo, Type) VALUES ( " + qTest[2]  + ", \"" + qTest[3] + "\"" + ", \"" + qTest[4] + "\"" + " )";
+        String query = "INSERT INTO Consolidated_ApplicationList ( Security_ID, AppNo, Type) VALUES ( " + qTest[2] + ", \"" + qTest[3] + "\"" + ", \"" + qTest[4] + "\"" + " )";
         //System.out.println(query);
 
 
