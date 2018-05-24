@@ -99,3 +99,4 @@ gen### Java template
 hs_err_pid*
 .gitignore
 .idea/workspace.xml
+!/gradle/wrapper/gradle-wrapper.jar
